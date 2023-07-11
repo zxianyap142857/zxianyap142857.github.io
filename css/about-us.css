@@ -4,9 +4,7 @@ body {
     height:700px;
 }
 
-.wrapper {
-    flex-direction: column;
-}
+
 
 .firstSection {
     width: 1250px;
