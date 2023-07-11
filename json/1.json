@@ -1,0 +1,24 @@
+{
+  "title": "IT",
+  "duration": 135,
+  "releaseDate": "5/9/2017",
+  "genre": "Horror",
+  "language": "English",
+  "subtitles": "English",
+  "classification": "P13",
+  "director": "Andy Muschietti",
+  "cast": [
+    "Jaeden Lieberher",
+    "Bill Skarsgård",
+    "Jeremy Ray Taylor",
+    "Sophia Lillis",
+    "Finn Wolfhard",
+    "Wyatt Oleff",
+    "Chosen Jacobs",
+    "Jack Dylan Grazer",
+    "Nicholas Hamilton",
+    "Jackson Robert Scott"
+  ],
+  "poster": "/image/IT-poster.jpg",
+  "trailer": "https://www.youtube.com/embed/xKJmEC5ieOk"
+}
