@@ -1,0 +1,74 @@
+html {
+  background-image: linear-gradient(90deg, #0c3264, #040d45);
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #FFD200;
+}
+
+#first-line,
+#second-line,
+#third-line {
+  display: flex;
+  flex-direction: row;
+  background-color: #4c56ac;
+  border: 20px solid #4b2fe9;
+  margin-bottom: 40px;
+  border-radius: 50px;
+}
+
+/*apply css for div and img*/
+#about-us {
+  filter: drop-shadow(20px 20px 20px rgb(4, 11, 55));
+}
+
+#about-us img {
+  border-radius: 40px;
+}
+
+/*flexbox*/
+#content {
+  flex-direction: row;
+  flex: 7;
+}
+
+/*margins*/
+dt {
+  margin-left: 36px;
+  font-weight: bold;
+}
+
+#second-line dt {
+  margin-left: 56px;
+}
+
+#second-line dl {
+  margin-right: 30px;
+}
+
+/*space between flexbox*/
+#second-line {
+  justify-content: space-between;
+}
+
+/*resize image*/
+#first-line img {
+  width: 400px;
+  height: 300px;
+}
+
+#second-line img {
+  width: 400px;
+}
+
+/*center the website*/
+#about-us {
+  padding: auto;
+  width: 80%;
+  margin: auto;
+}

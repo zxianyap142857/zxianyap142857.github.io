@@ -1,0 +1,54 @@
+html {
+  background-image: linear-gradient(90deg, #0c3264, #040d45);
+}
+
+body {
+  margin: 0;
+}
+
+#wrapper {
+  align-items: center;
+  padding-top: 20%;
+  margin-top: 50%;
+  display: flex;
+}
+
+#content {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+#cs-left {
+  flex: 3;
+  text-align: center;
+  margin-left: 40px;
+}
+
+#cs-right {
+  flex: 7;
+  display: flex;
+  justify-content: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#cs-right,
+#cs-left {
+  border-radius: 50px;
+  background-color: #5C469C;
+  filter: drop-shadow(20px 20px 20px #040b37);
+}
+
+h1 {
+  text-align: center;
+  color: #FFD200;
+}
+
+iframe {
+  filter: drop-shadow(20px 20px 10px #d1a7d150);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

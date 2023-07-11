@@ -1,0 +1,56 @@
+html {
+  background-image: linear-gradient(90deg, #0c3264, #040d45);
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  width: 80%;
+  padding: 15px;
+  background-color: white;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 12px;
+  box-shadow: 20px 20px 20px black;
+}
+
+h1 {
+  margin-left: 20px;
+  font-size: 3em;
+}
+
+.transaction-detail {
+  background-color: #dddddd;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 10px;
+  padding-bottom: 30px;
+  font-size: 30px;
+}
+
+label {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+button {
+  font-size: 20px;
+  padding: 5px;
+  background-color: white;
+  width: 100px;
+  margin-top: 25px;
+  margin-left: 30px;
+  border: 5px solid white;
+  border-radius: 12px;
+}
+
+button:active {
+  transform: scale(.9);
+}
+
+button:focus {
+  outline: none;
+}

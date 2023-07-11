@@ -1,0 +1,73 @@
+/* footer general css*/
+footer {
+  background-color: #000000;
+  margin: 0px;
+  padding: 0px;
+  height: 200px;
+  position: fit-content;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+#footer-section-1,
+#footer-section-3,
+#footer-section-2 {
+  padding: 0px;
+}
+
+#footer-section-1,
+#foooter-section-2,
+#footer-section-4 {
+  flex: 1;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#footer-section {
+  flex: 1;
+  text-align: center;
+  padding: 5px 0;
+}
+
+/*foooter section-2*/
+#footer-section-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer-section-2 h3 {
+  margin: 0px;
+  padding: 20px;
+}
+
+/*For Footer-section 3*/
+#footer-section-3 {
+  width: 300px;
+  text-align: center;
+}
+
+/*Remove Text decoration*/
+#footer-section-3 a {
+  text-decoration: none;
+  color: white;
+}
+
+#logo img {
+  width: 50px;
+  height: 50px;
+  flex: 1;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0px;
+
+}
+
+#logo {
+  display: flex;
+  flex-direction: row;
+}
