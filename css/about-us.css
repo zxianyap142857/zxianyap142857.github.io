@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    background: linear-gradient(90deg,#0c3264,#040d45);
+    height: 700px;
+}
+
+.wrapper {
+    flex-direction: column;
+}
+
+.firstSection {
+    width: 1250px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    padding: 10px;
+    background: linear-gradient(180deg,#0e2377,#ffffff);
+    border-radius: 15px;
+    border: 5px solid rgb(115, 115, 115);
+    filter: drop-shadow(20px 20px 20px black);
+}
+
+.firstSection .MoviePicture1 {
+    margin-left: 10px;
+    margin-top: 10px;
+    filter: drop-shadow(10px 10px 10px black);
+}
+
+.banner1 {
+    margin-left:80px;
+    margin-top: 10px;
+}
+
+h2 {
+    margin-top: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    filter: drop-shadow(3.5px 3.5px 3.5px black);
+}
+
+.P {
+    border-radius: 15px;
+    border: 3.5px solid rgb(3, 33, 97);
+    width: 650px;
+    margin-left: -10px;
+}
+
+.p {
+    border-radius: 11px;
+    padding: 10px;
+    width: 630px;
+    background-color: rgb(55, 89, 149);
+}
+
+.p h3 {
+    font-size: 20px;
+}
+
+h3 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.secondSection {
+    width: 1250px;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    padding: 10px;
+    background: linear-gradient(180deg,#0e2377,#ffffff);
+    border-radius: 15px;
+    border: 5px solid rgb(115, 115, 115);
+    filter: drop-shadow(20px 20px 20px black);
+}
+
+.secondSection .MoviePicture2 {
+    margin-left:70px;
+    margin-top: 10px;
+    filter: drop-shadow(10px 10px 10px black);
+}
+
+.banner2 {
+    margin-left:20px;
+    margin-top: 10px;
+}
+
+.P2 {
+    border-radius: 15px;
+    border: 3.5px solid rgb(3, 33, 97);
+    width: 630px;
+    margin-left: -10px;
+}
+
+.p2 {
+    border-radius: 11px;
+    padding: 19px;
+    background-color: rgb(55, 89, 149);
+}
+
+.p2 h3 {
+    font-size: 20px;
+}
+
+.thirdSection {
+    width: 1230px;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    padding: 20px;
+    background: linear-gradient(180deg,#0e2377,#ffffff);
+    border-radius: 15px;
+    border: 5px solid rgb(115, 115, 115);
+    filter: drop-shadow(20px 20px 20px black);
+}
+
+.thirdSection .MoviePicture3 {
+    margin-left: 10px;
+    margin-top: 10px;
+    filter: drop-shadow(10px 10px 10px black);
+} 
+
+.banner3 {
+    margin-left:80px;
+    margin-top: 10px;
+}
+
+.P3 {
+    border-radius: 15px;
+    border: 3.5px solid rgb(3, 33, 97);
+    width: 650px;
+    margin-left: -10px;
+}
+
+.p3 {
+    border-radius: 12px;
+    padding: 10px;
+    background-color: rgb(55, 89, 149);
+    height: 175px;
+}
+
+.p3 h3 {
+    font-size: 20px;
+}
