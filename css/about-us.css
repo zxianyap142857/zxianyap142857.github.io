@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background: linear-gradient(90deg,#0c3264,#040d45);
-    height: 700px;
+    height:700px;
 }
 
 .wrapper {
@@ -56,14 +56,21 @@ h2 {
     font-size: 20px;
 }
 
-h3,h1 {
+h3 {
     color: white;
     font-family: 'Poppins', sans-serif;
     letter-spacing: .5px;
     font-size: 18px;
     font-weight: bold;
 }
-
+h1{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align:center;
+}
 .secondSection {
     width: 1250px;
     margin: auto;
