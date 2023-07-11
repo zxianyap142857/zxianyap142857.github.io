@@ -5,19 +5,6 @@ document.getElementById("movie").innerHTML = "Movie Name: " + localStorage.getIt
 document.getElementById("showdate").innerHTML = "Show Date: " + localStorage.getItem("showDate")
 document.getElementById("seatnumber").innerHTML = "Seat Number: " + localStorage.getItem("selectedSeat")
 
-const user = 'admin' // temporarily
-const periodId = localStorage.getItem('periodId')
-const selectedSeat = JSON.parse(`[${localStorage.getItem("selectedSeat")}]`)
-
-if (periodId) {
-  const jsonText = JSON.stringify({ id: periodId, user: user, seats: selectedSeat })
-
-  fetch(apiURL.seatPost, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: jsonText })
-    .then((res) => {
-      console.log(res)
-    })
-}
-
 function getTime() {
   const date = new Date()
   const year = date.getFullYear()

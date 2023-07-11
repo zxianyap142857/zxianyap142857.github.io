@@ -5,13 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Payment</title>
-  <link rel="stylesheet" href="/css/navigation.css">
-  <link rel="stylesheet" href="/css/payment.css">
+  <link rel="stylesheet" href="./css/navigation.css">
+  <link rel="stylesheet" href="./css/payment.css">
 </head>
 
 <body>
   <div id="navigation"></div> <!-- whole navigation section -->
-  <script src="/js/navigation.js"></script>
 
   <div class="payment">
     <div class="upperSection">
@@ -44,17 +43,18 @@
     </div>
 
     <div class="Button">
-      <button onclick="location.href = '/transaction.html'">Pay</button>
+      <button onclick="next()">Pay</button>
       <br>
       <button onclick="history.back()">Cancel</button>
     </div>
   </div>
-  <script>
-    document.getElementById("movie").innerHTML = "Movie Name: " + localStorage.getItem("movie")
-    document.getElementById("date").innerHTML = "Show Date: " + localStorage.getItem("showDate")
-    document.getElementById("seatnumber").innerHTML = "Seat Number: " + localStorage.getItem("selectedSeat")
-    document.getElementById("amount").innerHTML = "Amount: RM " + localStorage.getItem("price")
-  </script>
+
+  <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth-compat.js"></script>
+  <script src="./js/navigation.js"></script>
+  <script src="./js/user-status.js"></script>
+  <script src="./js/config.js"></script>
+  <script src="./js/payment.js"></script>
 </body>
 
 </html>

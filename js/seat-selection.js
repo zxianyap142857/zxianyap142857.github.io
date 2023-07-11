@@ -14,8 +14,7 @@ for (const seat of seats) {
 //get booked seat data from back end
 fetch(`${apiURL.seatGet}?id=${periodId}`)
   .then((res) => {
-
-    if (res.status !== 200 ) {
+    if (res.status < 200 && 299 < res.status) {
       throw new Error(res.json())
     }
 
@@ -32,8 +31,8 @@ fetch(`${apiURL.seatGet}?id=${periodId}`)
       }
     }
   })
-  .catch((err) => {
-    console.error(err)
+  .catch(async(err) => {
+    console.error(await err)
   })
 
 function changecolor(index) {
@@ -75,5 +74,5 @@ function next() {
   var price = selectedSeat.length * 2;
   localStorage.setItem("price", price.toString())
   localStorage.setItem("selectedSeat", selectedSeat)
-  location.href = '/total.html'
+  location.href = './total.html'
 }

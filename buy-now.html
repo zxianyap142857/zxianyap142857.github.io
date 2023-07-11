@@ -7,8 +7,8 @@
   <title>Buy Now</title>
 
   <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"> <!-- boxicons -->
-  <link rel="stylesheet" href="/css/navigation.css">
-  <link rel="stylesheet" href="/css/buy-now.css">
+  <link rel="stylesheet" href="./css/navigation.css">
+  <link rel="stylesheet" href="./css/buy-now.css">
 </head>
 
 <body>
@@ -26,10 +26,10 @@
         <div id="banner">
           <h2 id="detail-title">No Thing Here</h2>
           <p id="P">
-            <img src="/image/calendar-icon.png" width="3.5%"><span id="detail-release-date">Release Date:</span><br><br>
-            <img src="/image/chronometer-icon.png" width="3.5%"><span id="detail-duration">Running Time:</span><br><br>
-            <img src="/image/different-ages-icon.png" width="3.5%"><span id="detail-classification">Classification:</span><br><br>
-            <img src="/image/tag-icon.png" width="3.5%"><span id="detail-genre">Genre:</span>
+            <img src="./image/calendar-icon.png" width="3.5%"><span id="detail-release-date">Release Date:</span><br><br>
+            <img src="./image/chronometer-icon.png" width="3.5%"><span id="detail-duration">Running Time:</span><br><br>
+            <img src="./image/different-ages-icon.png" width="3.5%"><span id="detail-classification">Classification:</span><br><br>
+            <img src="./image/tag-icon.png" width="3.5%"><span id="detail-genre">Genre:</span>
           </p>
         </div>
       </div>
@@ -45,23 +45,23 @@
 
         <ul class="options">
           <li class="option">
-            <i class="location"><img src="/image/location-icon.png" style="width: 20px;"></i>
+            <i class="location"><img src="./image/location-icon.png" style="width: 20px;"></i>
             <span class="option-text" value="01">Location 1</span>
           </li>
           <li class="option">
-            <i class="location"><img src="/image/location-icon.png" style="width: 20px;"></i>
+            <i class="location"><img src="./image/location-icon.png" style="width: 20px;"></i>
             <span class="option-text" value="02">Location 2</span>
           </li>
           <li class="option">
-            <i class="location"><img src="/image/location-icon.png" style="width: 20px;"></i>
+            <i class="location"><img src="./image/location-icon.png" style="width: 20px;"></i>
             <span class="option-text" value="03">Location 3</span>
           </li>
           <li class="option">
-            <i class="location"><img src="/image/location-icon.png" style="width: 20px;"></i>
+            <i class="location"><img src="./image/location-icon.png" style="width: 20px;"></i>
             <span class="option-text" value="04">Location 4</span>
           </li>
           <li class="option">
-            <i class="location"><img src="/image/location-icon.png" style="width: 20px;"></i>
+            <i class="location"><img src="./image/location-icon.png" style="width: 20px;"></i>
             <span class="option-text" value="05">Location 5</span>
           </li>
         </ul>
@@ -85,23 +85,23 @@
 
         <ul class="options3">
           <li class="option3">
-            <i class="time"><img src="/image/clock-icon.png" style="width: 20px;"></i>
+            <i class="time"><img src="./image/clock-icon.png" style="width: 20px;"></i>
             <span class="option-text3" value="01">9.00am</span>
           </li>
           <li class="option3">
-            <i class="time"><img src="/image/clock-icon.png" style="width: 20px;"></i>
+            <i class="time"><img src="./image/clock-icon.png" style="width: 20px;"></i>
             <span class="option-text3" value="02">1.00pm</span>
           </li>
           <li class="option3">
-            <i class="time"><img src="/image/clock-icon.png" style="width: 20px;"></i>
+            <i class="time"><img src="./image/clock-icon.png" style="width: 20px;"></i>
             <span class="option-text3" value="03">3.00pm</span>
           </li>
           <li class="option3">
-            <i class="time"><img src="/image/clock-icon.png" style="width: 20px;"></i>
+            <i class="time"><img src="./image/clock-icon.png" style="width: 20px;"></i>
             <span class="option-text3" value="04">7.00pm</span>
           </li>
           <li class="option3">
-            <i class="time"><img src="/image/clock-icon.png" style="width: 20px;"></i>
+            <i class="time"><img src="./image/clock-icon.png" style="width: 20px;"></i>
             <span class="option-text3" value="05">9.00pm</span>
           </li>
         </ul>
@@ -111,8 +111,11 @@
     <input type="button" value="Next" id="nextButton" onclick="next()">
 
   </div>
-  <script src="/js/navigation.js"></script>
-  <script src="/js/buy-now.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth-compat.js"></script>
+  <script src="./js/navigation.js"></script>
+  <script src="./js/buy-now.js"></script>
+  <script src="./js/user-status.js"></script>
 </body>
 
 </html>

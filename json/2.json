@@ -15,6 +15,6 @@
     "Andrew Astor",
     "Rose Bryme"
   ],
-  "poster": "/image/insidious_the_last_key-poster.jpg",
+  "poster": "./image/insidious_the_last_key-poster.jpg",
   "trailer": "https://www.youtube.com/embed/ZuQuOnYnr3Q"
 }

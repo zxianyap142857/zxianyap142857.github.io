@@ -11,6 +11,6 @@
     "Leah Lewis",
     "Mamoudou Athie"
   ],
-  "poster": "/image/Elemental-poster.jpg",
+  "poster": "./image/Elemental-poster.jpg",
   "trailer": "https://www.youtube.com/embed/-cT495xKvvs"
 }

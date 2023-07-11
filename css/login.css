@@ -216,13 +216,21 @@ input {
   margin: 20px 0;
 }
 
-.social-container a {
+.social-container button {
+  background-color: #FFFFFF;
   border: 1px solid #DDDDDD;
   border-radius: 50%;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   margin: 0 5px;
+  padding: 0;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.social-container img {
   height: 40px;
   width: 40px;
 }

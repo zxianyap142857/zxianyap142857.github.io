@@ -3,8 +3,12 @@ const urlParams = new URLSearchParams(queryString)
 const movieId = urlParams.get('id')
 
 if (movieId) {
-  fetch(`/json/${movieId}.json`)
+  fetch(`../json/${movieId}.json`)
     .then((res) => {
+      if (res.status < 200 && 299 < res.status) {
+        throw new Error(res.json())
+      }
+
       return res.json()
     })
     .then((data) => {
@@ -15,6 +19,9 @@ if (movieId) {
       document.getElementById('detail-classification').innerText = `Classification: ${data.classification}`
       document.getElementById('detail-genre').innerText = `Genre: ${data.genre}`
     })
+    .catch(async(err) => {
+      console.error(await err)
+    })
 }
 
 const selectedInformation = [ "", "", "", ""]
@@ -23,14 +30,16 @@ const dateOption = document.getElementsByClassName('options2')[0]
 const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 const template = document.createElement('template');
 
-selectedInformation[0] = String(movieId.toString()).padStart(2, '0')
+if (movieId) {
+  selectedInformation[0] = String(movieId.toString()).padStart(2, '0')
+}
 
 for (let index = 0; index < 30; index++) {
   const specifiedDate = addDays(currentDate, index);
   
   template.innerHTML += `
     <li class="option2">
-      <i class="calender"><img src="/image/calendar-icon.png" style="width: 20px;"></i>
+      <i class="calender"><img src="./image/calendar-icon.png" style="width: 20px;"></i>
       <span class="option-text2" value="${formatDate(specifiedDate)}">${formatDateName(specifiedDate)}</span>
     </li>
   `

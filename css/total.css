@@ -180,16 +180,16 @@ hr {
 }
 
 .next {
-  width: 200px;
-  height: 50px;
+  width: 100px;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 50px;
+  padding: 10px;
   background-color: white;
   text-align: center;
-  font-size: 2em;
-  border-radius: 15px;
-  border: 3px solid white;
+  font-size: 20px;
+  border-radius: 30px;
   cursor: pointer;
+  filter: drop-shadow(5px 5px 5px black);
 }
 
 .next:active {

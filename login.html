@@ -7,8 +7,8 @@
   <title>Sign Up / Login</title>
 
   <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"> <!-- boxicons -->
-  <link rel="stylesheet" href="/css/navigation.css">
-  <link rel="stylesheet" href="/css/login.css">
+  <link rel="stylesheet" href="./css/navigation.css">
+  <link rel="stylesheet" href="./css/login.css">
 </head>
 
 <body>
@@ -16,34 +16,28 @@
 
   <div class="container" id="container">
     <div class="form-container sign-up-container">
-      <form action="#">
+      <form id="sign-up-form">
         <h1>Create Account</h1>
-        <div class="social-container">
-          <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-          <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-        </div>
         <span>or use your email for registration</span>
-        <input type="text" placeholder="Name" />
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Password" />
-        <input type="text" placeholder="Date Of Birth,  Exp:31/12/2002" />
-        <button>Sign Up</button>
+        <input type="text" class="input-name" placeholder="Name" required>
+        <input type="email" class="input-email" placeholder="Email" required>
+        <input type="password" class="input-password" placeholder="Password" required>
+        <input type="text" class="input-birth-date" placeholder="Date Of Birth,  Exp:31/12/2002" required>
+        <button id="email-sign-up">Sign Up</button>
       </form>
     </div>
     <div class="form-container sign-in-container">
-      <form action="#">
+      <form id="sign-in-form">
         <h1>Sign in</h1>
         <div class="social-container">
-          <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-          <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          <button class="social" onclick="signInWithFacebook()"><img src="./image/facebook-color-icon.png" alt="facebook"></button>
+          <button class="social" onclick="signInWithGoogle()"><img src="./image/google-color-icon.png" alt="google"></button>
         </div>
         <span>or use your account</span>
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Password" />
+        <input type="email" class="input-email" placeholder="Email" required>
+        <input type="password" class="input-password" placeholder="Password" required>
         <a href="#">Forgot your password?</a>
-        <button>Sign In</button>
+        <button id="email-sign-in">Sign In</button>
       </form>
     </div>
     <div class="overlay-container">
@@ -62,8 +56,11 @@
     </div>
   </div>
 
-  <script src="/js/navigation.js"></script>
-  <script src="/js/login.js"></script>
+  <script src="./js/navigation.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth-compat.js"></script>
+  <script src="./js/user-status.js"></script>
+  <script src="./js/login.js"></script>
 
 </body>
 

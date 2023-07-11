@@ -19,6 +19,6 @@
     "Nicholas Hamilton",
     "Jackson Robert Scott"
   ],
-  "poster": "/image/IT-poster.jpg",
+  "poster": "./image/IT-poster.jpg",
   "trailer": "https://www.youtube.com/embed/xKJmEC5ieOk"
 }

@@ -4,8 +4,12 @@ const movieId = urlParams.get('id')
 let reviewsPage = 1
 
 if (movieId) {
-  fetch(`/json/${movieId}.json`)
+  fetch(`../json/${movieId}.json`)
     .then((res) => {
+      if (res.status < 200 && 299 < res.status) {
+        throw new Error(res.json())
+      }
+
       return res.json()
     })
     .then((data) => {
@@ -49,6 +53,9 @@ if (movieId) {
       document.getElementsByClassName('trailer-button')[0].addEventListener('click',openTrailer)
       document.getElementsByClassName('trailer-close')[0].addEventListener('click',closeTrailer)
     })
+    .catch(async(err) => {
+      console.error(await err)
+    })
 
   getReviews()
   document.getElementsByClassName('load-more')[0].addEventListener('click',getReviews)
@@ -76,6 +83,10 @@ function formatTimestamp(utcMilliseconds) {
 function getReviews() {
   fetch(`${apiURL.reviewGet}?id=${movieId}&page=${reviewsPage}`)
   .then((res) => {
+    if (res.status < 200 && 299 < res.status) {
+      throw new Error(res.json())
+    }
+
     return res.json()
   })
   .then((data) => {
@@ -93,7 +104,7 @@ function getReviews() {
       div.className = 'comment'
       div.innerHTML = 
         `
-        <img class="user-picture" src="/image/user-icon.png" alt="User Picture">
+        <img class="user-picture" src="./image/user-icon.png" alt="User Picture">
         <div class="comment-details">
           <div class="username">${item.username}</div>
           <div class="rating">Rating: ${item.rating} stars</div>
@@ -105,5 +116,8 @@ function getReviews() {
     }
 
     reviewsPage++
+  })
+  .catch(async(err) => {
+    console.error(await err)
   })
 }
