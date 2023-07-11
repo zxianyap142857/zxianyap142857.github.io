@@ -2,6 +2,7 @@ body {
     margin: 0;
     background: linear-gradient(90deg,#0c3264,#040d45);
     height:700px;
+    padding-bottom:30px;
 }
 
 
@@ -66,6 +67,7 @@ h1{
     font-weight: bold;
     text-align:center;
 }
+
 .secondSection {
     width: 1250px;
     margin: auto;
