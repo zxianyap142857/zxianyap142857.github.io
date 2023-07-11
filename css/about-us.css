@@ -6,6 +6,9 @@ body {
   margin: 0;
 }
 
+dl,dt,li{
+  font-size:22px;
+}
 h1 {
   text-align: center;
   color: #FFD200;
