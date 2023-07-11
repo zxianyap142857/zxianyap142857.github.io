@@ -4,9 +4,11 @@ html {
 
 body {
   margin: 0;
-  font-size:2.5em;
 }
 
+dl,dt,dd{
+  font-size:3em;
+}
 h1 {
   text-align: center;
   color: #FFD200;
