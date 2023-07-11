@@ -6,8 +6,8 @@ body {
   margin: 0;
 }
 
-dl,dt,dd{
-  font-size:32px;
+dl,dt,li{
+  font-size:22px;
 }
 h1 {
   text-align: center;
