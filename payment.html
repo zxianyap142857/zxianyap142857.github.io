@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+  <link rel="stylesheet" href="/css/navigation.css">
+  <link rel="stylesheet" href="/css/payment.css">
+</head>
+
+<body>
+  <div id="navigation"></div> <!-- whole navigation section -->
+  <script src="/js/navigation.js"></script>
+
+  <div class="payment">
+    <div class="upperSection">
+      <label id="movie"></label>
+      <br><br>
+      <label id="date"></label>
+      <br><br>
+      <label id="seatnumber"></label>
+      <br><br>
+      <label id="amount"></label>
+      <br><br>
+    </div>
+    <hr>
+    <div class="lowerSection">
+      <label> Name:</label>
+      <input type="text" name="name" id="name">
+      <br><br>
+      <label>Phone Number:</label>
+      <input type="text" name="number" id="number">
+      <br><br>
+      <label>E-mail confirmation:</label>
+      <input type="text" name="email" id="email">
+      <br><br>
+      <label for="mode">Select Payment Mode:</label>
+      <select id="option">
+        <option value="fpx">FPX</option>
+        <option value="touchngo">Touch n go</option>
+        <option value="onlinetransfer">Online Transfer</option>
+      </select>
+    </div>
+
+    <div class="Button">
+      <button onclick="location.href = '/transaction.html'">Pay</button>
+      <br>
+      <button onclick="history.back()">Cancel</button>
+    </div>
+  </div>
+  <script>
+    document.getElementById("movie").innerHTML = "Movie Name: " + localStorage.getItem("movie")
+    document.getElementById("date").innerHTML = "Show Date: " + localStorage.getItem("showDate")
+    document.getElementById("seatnumber").innerHTML = "Seat Number: " + localStorage.getItem("selectedSeat")
+    document.getElementById("amount").innerHTML = "Amount: RM " + localStorage.getItem("price")
+  </script>
+</body>
+
+</html>

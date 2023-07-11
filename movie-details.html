@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Detail</title>
+  <link rel="stylesheet" href="/css/movie-details.css">
+  <link rel="stylesheet" href="/css/navigation.css">
+</head>
+
+<body>
+  <div id="navigation"></div> <!-- whole navigation section -->
+
+  <div class="main-div"> <!-- main content -->
+    <div class="content-left">
+      <div class="poster">
+        <!-- keep for js insert item -->
+      </div>
+      <div class="trailer-button-div">
+        <button class="trailer-button">
+          <img src="/image/play-icon.png" width="40px">
+          Show Trailer
+        </button>
+      </div>
+      <div class="trailer">
+        <iframe class="yt-player" src="" title="YouTube video player" loading="lazy" allowfullscreen></iframe>
+        <button class="trailer-close"><img src="/image/close-icon.png" alt="close" width="80px"></button>
+      </div>
+    </div>
+    <div class="content-right">
+      <div class="details"> <!-- placeholder: js replace item -->
+        <h2 class="detail-title">No Thing Here</h2>
+        <div class="detail-box">
+          <ul class="detail-general-items">
+            <li>Release Date:</li>
+            <li>Language:</li>
+            <li>Duration:</li>
+            <li>Subtitle:</li>
+            <li>Genre:</li>
+            <li>Classification:</li>
+          </ul>
+          <div class="detail-director">
+            <div class="bold">Director</div>
+            <div></div>
+          </div>
+          <div class="detail-cast">
+            <div class="bold">Cast</div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews">
+        <h2>Reviews</h2>
+        <!-- keep for js insert item -->
+      </div>
+      <div class="load-more">
+        Load More Reviews
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/config.js"></script>
+  <script src="/js/movie-details.js"></script>
+  <script src="/js/navigation.js"></script>
+</body>
+
+</html>

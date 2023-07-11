@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seat Selection</title>
+  <link rel="stylesheet" href="/css/navigation.css">
+  <link rel="stylesheet" href="/css/seat-selection.css">
+</head>
+
+<body>
+  <div id="navigation"></div> <!-- whole navigation section -->
+  <script src="/js/navigation.js"></script>
+
+  <br>
+  <div class="wrapper">
+    <div class="top">
+      <div class="exit">EXIT</div>
+      <div class="screen">
+        <h1>Screen</h1>
+        <table>
+          <tr>
+            <td>
+              <div class="seat" onclick="changecolor(0)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(1)"></div>
+            </td>
+            <td class="stair">s</td>
+            <td>
+              <div class="seat" onclick="changecolor(2)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(3)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(4)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(5)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(6)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(7)"></div>
+            </td>
+            <td class="stair">s</td>
+            <td>
+              <div class="seat" onclick="changecolor(8)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(9)"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="seat" onclick="changecolor(10)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(11)"></div>
+            </td>
+            <td class="stair">t</td>
+            <td>
+              <div class="seat" onclick="changecolor(12)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(13)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(14)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(15)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(16)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(17)"></div>
+            </td>
+            <td class="stair">t</td>
+            <td>
+              <div class="seat" onclick="changecolor(18)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(19)"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="seat" onclick="changecolor(20)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(21)"></div>
+            </td>
+            <td class="stair">a</td>
+            <td>
+              <div class="seat" onclick="changecolor(22)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(23)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(24)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(25)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(26)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(27)"></div>
+            </td>
+            <td class="stair">a</td>
+            <td>
+              <div class="seat" onclick="changecolor(28)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(29)"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="seat" onclick="changecolor(30)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(31)"></div>
+            </td>
+            <td class="stair">i</td>
+            <td>
+              <div class="seat" onclick="changecolor(32)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(33)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(34)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(35)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(36)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(37)"></div>
+            </td>
+            <td class="stair">i</td>
+            <td>
+              <div class="seat" onclick="changecolor(38)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(39)"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="seat" onclick="changecolor(40)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(41)"></div>
+            </td>
+            <td class="stair">r</td>
+            <td>
+              <div class="seat grey" onclick="changecolorgrey(42)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(43)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(44)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(45)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(46)"></div>
+            </td>
+            <td>
+              <div class="seat grey" onclick="changecolorgrey(47)"></div>
+            </td>
+            <td class="stair">r</td>
+            <td>
+              <div class="seat" onclick="changecolor(48)"></div>
+            </td>
+            <td>
+              <div class="seat" onclick="changecolor(49)"></div>
+            </td>
+          </tr>
+        </table>
+        </tr>
+        <hr>
+      </div>
+      <div class="exit">EXIT</div>
+    </div>
+    <div class="bottom">
+      <div class="example-seat green"></div>
+      <div class="font">Available</div>
+      <div class="example-seat blue"></div>
+      <div class="font">Selected</div>
+      <div class="example-seat red"></div>
+      <div class="font">Booked</div>
+      <div class="example-seat grey"></div>
+      <div class="font">Wheel Chair</div>
+      <button class="next" onclick="next()">Next</button>
+    </div>
+  </div>
+
+  <script src="/js/config.js"></script>
+  <script src="/js/seat-selection.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Main Page</title>
+  <link rel="stylesheet" href="/css/swiper-bundle.css" />
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/navigation.css">
+  <link rel="stylesheet" href="/css/footer.css">
+</head>
+
+<body>
+  <div id="navigation"></div> <!-- whole navigation section -->
+
+  <div class="main-div"> <!-- main content -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="/image/IT-banner.jpg" alt="IT banner">
+          <div class="banner-items">
+            <button onclick="location.href = '/buy-now.html?id=1'">Book Now</button>
+            <button onclick="location.href = '/movie-details.html?id=1'">View Detail</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="/image/insidious_the_last_key-banner.webp" alt="Insidious: The Last Key banner">
+          <div class="banner-items">
+            <button onclick="location.href = '/buy-now.html?id=2'">Book Now</button>
+            <button onclick="location.href = '/movie-details.html?id=2'">View Detail</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="/image/Transformers_Rise_of_the_Beasts-banner.jpg" alt="Transformers: Rise Of The Beasts banner">
+          <div class="banner-items">
+            <button onclick="location.href = '/buy-now.html?id=3'">Book Now</button>
+            <button onclick="location.href = '/movie-details.html?id=3'">View Detail</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="/image/Elemental_banner.jpg" alt="Elemental banner">
+          <div class="banner-items">
+            <button onclick="location.href = '/buy-now.html?id=4'">Book Now</button>
+            <button onclick="location.href = '/movie-details.html?id=4'">View Detail</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="/image/Detective_Conan_Black_Iron_Submarine-banner.jpg"
+            alt="Detective Conan Black Iron Submarine banner">
+          <div class="banner-items">
+            <button onclick="location.href = '/buy-now.html?id=5'">Book Now</button>
+            <button onclick="location.href = '/movie-details.html?id=5'">View Detail</button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!--Newly added code-->
+    <div id="movie-list">
+
+      <div id="movie-1">
+        <img src="/image/Detective_Conan_Black_Iron_Submarine-poster.jpg">
+        <a href="">Movie Detail</a>
+      </div>
+
+      <div id="movie-2">
+        <img src="/image/Transformers_Rise_of_the_Beasts-poster.jpg">
+        <a href="">Movie Detail</a>
+      </div>
+
+      <div id="movie-3">
+        <img src="/image/IT-poster.jpg">
+        <a href="">Movie Detail</a>
+      </div>
+
+      <div id="movie-4">
+        <img src="/image/Elemental-poster.jpg">
+        <a href="">Movie Detail</a>
+      </div>
+
+      <div id="movie-5">
+        <img src="/image/insidious_the_last_key-poster.jpg">
+        <a href="">Movie Detail</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!--footer newly added-->
+  <footer>
+
+    <div id="footer-section-1">
+      <p>
+      <h3>People Gregic Society Cinema:</h3>
+      <br>Address:<br>
+      69,Jalan Melawati,<br>
+      Taman Senjohn,<br>
+      52000 Kuala Lumpur</p>
+    </div>
+
+    <div id="footer-section-2">
+      <h3>Follow Us:</h3>
+      <br>
+      <div id="logo">
+        <div><img src="/image/facebook-icon.png" href=""></div>
+        <div><img src="/image/instagram-icon.png" href=""></div>
+        <div><img src="/image/twitter-icon.png" href=""></div>
+        <div><img src="/image/youtube-icon.png" href=""></div>
+      </div>
+    </div>
+
+    <div id="footer-section-3">
+      <p><a href="/customer-services.html">Customer Services</a></p>
+      <p><a href="/about-us.html">About Us</a></p>
+      <p><a href="/contact-us.html">Contact Us</a></p>
+    </div>
+
+    <div id="footer-section-4">
+      <p>&copy; Copyright 2023 People Gragic Society Cinemas 195901000261 (3609-M). All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="/js/swiper-bundle.js"></script>
+  <script src="/js/index.js"></script>
+  <script src="/js/navigation.js"></script>
+</body>
+
+</html>
