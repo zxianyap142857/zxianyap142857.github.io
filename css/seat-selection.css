@@ -84,19 +84,19 @@ hr {
 }
 
 .green {
-  background-image: url('image/seat-green.png');
+  background-image: url('/image/seat-green.png');
 }
 
 .blue {
-  background-image: url('image/seat-light-blue.png')
+  background-image: url('/image/seat-light-blue.png')
 }
 
 .red {
-  background-image: url('image/seat-red.png');
+  background-image: url('/image/seat-red.png');
 }
 
 .grey {
-  background-image: url('image/seat-light-grey.png');
+  background-image: url('/image/seat-light-grey.png');
 }
 
 .next {
