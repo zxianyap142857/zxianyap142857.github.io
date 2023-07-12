@@ -8,7 +8,7 @@ if (nav) {
       <div class="element-hover">PROMOTION</div>
     </div>
     <div class="nav-right">
-      <button class="sign-in" onclick="location.href='./login.html'">Sign&nbsp;In/Register</button>
+      <button class="sign-in" onclick="javascript:location.href='./login.html'">Sign&nbsp;In/Register</button>
       <img width="45px" src="./image/user-icon.png" alt="user icon" class="user-icon">
       <img width="60px" src="./image/menu-icon.png" alt="menu" id="menu-icon" class="element-hover" onclick="togglePanel()">
     </div>
