@@ -1,26 +1,39 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <link rel="stylesheet" href="./css/navigation.css">
-        <link rel="stylesheet" href="./css/account.css">
-    </head>
-    <body>
-        <div id="navigation"></div> <!-- whole navigation section -->
+<html lang="en">
 
-        <div class="up">
-        <div class="profile"></div>
-        <div id="username">nahxinwen
-            <p id="email">email</p>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account</title>
+  <link rel="stylesheet" href="./css/navigation.css">
+  <link rel="stylesheet" href="./css/account.css">
+</head>
+
+<body>
+  <div id="navigation"></div> <!-- whole navigation section -->
+
+  <div class="up">
+    <div class="profile">
+      <img src="./image/user-icon.png" alt="user icon">
     </div>
-    <div class="bookingHis">Booking History</div>
-    <div id="ticketId">Ticket id:</div>
-    <div class="mainMenu"><a href="">Main Menu</a></div>
-    <script>
-      document.getElementById("username").innerHTML=localStorage.getItem("");
-      document.getElementById("email").innerHTML=localStorage.getItem("");
-      document.getElementById("ticketId").innerHTML="Ticket id: " +localStorage.getItem("");
-    </script>
-    <script src="./js/navigation.js"></script>
-    </body>
+    <div class="infomation">
+      <p id="username">username</p>
+      <p id="email">email</p>
+    </div>
+  </div>
+  <div class="bookingHis">Booking History</div>
+  <div id="ticketId">Ticket id:</div>
+
+  <div class="sign-out">
+    <button onclick="signOut()">Sign Out</button>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth-compat.js"></script>
+  <script src="./js/firebase-function.js"></script>
+  <script src="./js/navigation.js"></script>
+  <script src="./js/account.js"></script>
+  
+</body>
+
 </html>
