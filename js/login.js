@@ -46,7 +46,7 @@ document.getElementById('sign-up-form').addEventListener('submit', (event) => {
     return false
   }
 
-
+  signUpWithEmail(email, password, name)
 })
 
 document.getElementById('sign-in-form').addEventListener('submit', (event) => {
@@ -66,3 +66,6 @@ document.getElementById('sign-in-form').addEventListener('submit', (event) => {
 
   signInWithEmail(email, password)
 })
+
+// force init firebase auth
+initFirebase('auth')

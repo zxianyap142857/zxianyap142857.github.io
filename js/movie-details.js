@@ -50,15 +50,15 @@ if (movieId) {
         document.getElementsByClassName('yt-player')[0].src = data.trailer
       }
 
-      document.getElementsByClassName('trailer-button')[0].addEventListener('click',openTrailer)
-      document.getElementsByClassName('trailer-close')[0].addEventListener('click',closeTrailer)
+      document.getElementsByClassName('trailer-button')[0].addEventListener('click', openTrailer)
+      document.getElementsByClassName('trailer-close')[0].addEventListener('click', closeTrailer)
     })
-    .catch(async(err) => {
+    .catch(async (err) => {
       console.error(await err)
     })
 
   getReviews()
-  document.getElementsByClassName('load-more')[0].addEventListener('click',getReviews)
+  document.getElementsByClassName('load-more')[0].addEventListener('click', getReviews)
 }
 
 function openTrailer() {
@@ -76,34 +76,27 @@ function formatTimestamp(utcMilliseconds) {
   const day = date.getDate()
   const hours = String(date.getHours()).padStart(2, '0')
   const minutes = String(date.getMinutes()).padStart(2, '0')
-  
+
   return `${year}/${month}/${day} ${hours}:${minutes}`;
 }
 
 function getReviews() {
-  fetch(`${apiURL.reviewGet}?id=${movieId}&page=${reviewsPage}`)
-  .then((res) => {
-    if (res.status < 200 && 299 < res.status) {
-      throw new Error(res.json())
-    }
+  reviewGet(movieId, reviewsPage)
+    .then((data) => {
 
-    return res.json()
-  })
-  .then((data) => {
+      if (typeof data === 'object' && data.error) {
+        document.getElementsByClassName('load-more')[0].textContent = 'No More Reviews'
+        document.getElementsByClassName('load-more')[0].removeEventListener('click', getReviews)
+        return
+      }
 
-    if (typeof data === 'object' && data.error) {
-      document.getElementsByClassName('load-more')[0].textContent = 'No More Reviews'
-      document.getElementsByClassName('load-more')[0].removeEventListener('click', getReviews)
-      return
-    }
+      const review = document.getElementsByClassName('reviews')[0]
 
-    const review = document.getElementsByClassName('reviews')[0]
-
-    for (const item of data) {
-      const div = document.createElement('div')
-      div.className = 'comment'
-      div.innerHTML = 
-        `
+      for (const item of data) {
+        const div = document.createElement('div')
+        div.className = 'comment'
+        div.innerHTML =
+          `
         <img class="user-picture" src="./image/user-icon.png" alt="User Picture">
         <div class="comment-details">
           <div class="username">${item.username}</div>
@@ -112,12 +105,10 @@ function getReviews() {
           <div class="date">Posted on ${formatTimestamp(item.date)}</div>
         </div>
         `
-      review.append(div)
-    }
+        review.append(div)
+      }
 
-    reviewsPage++
-  })
-  .catch(async(err) => {
-    console.error(await err)
-  })
+      reviewsPage++
+    })
+    .catch()
 }

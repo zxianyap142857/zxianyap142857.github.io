@@ -3,18 +3,21 @@ document.getElementById("date").innerHTML = "Show Date: " + localStorage.getItem
 document.getElementById("seatnumber").innerHTML = "Seat Number: " + localStorage.getItem("selectedSeat")
 document.getElementById("amount").innerHTML = "Amount: RM " + localStorage.getItem("price")
 
-function next() {
+async function next() {
 
+  const userId = sessionStorage.getItem('userId')
   const periodId = localStorage.getItem('periodId')
   const selectedSeat = JSON.parse(`[${localStorage.getItem("selectedSeat")}]`)
+  const data = {}
+
+  if (!userId || userId === 'null') {
+    alert('please sign in to continue pay')
+    return
+  }
 
   if (periodId) {
-    const jsonText = JSON.stringify({ id: periodId, user: user.uid, seats: selectedSeat })
+    await seatsPost(periodId, userId, selectedSeat)
 
-    fetch(apiURL.seatPost, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: jsonText })
-      .then((res) => {
-        console.log(res)
-        location.href = './transaction.html'
-      })
+    location.href = '/transaction.html'
   }
 }

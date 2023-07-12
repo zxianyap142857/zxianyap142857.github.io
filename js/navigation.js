@@ -3,13 +3,13 @@ if (nav) {
   nav.innerHTML = `
   <nav>
     <div class="nav-left">
-      <a href="./index.html"><img width="50px" src="./image/logo.png"></a>
+      <a href="/index.html"><img width="50px" src="./image/logo.png"></a>
       <div class="element-hover">NEWS</div>
       <div class="element-hover">PROMOTION</div>
     </div>
     <div class="nav-right">
-      <button class="sign-in" onclick="javascript:location.href='./login.html'">Sign&nbsp;In/Register</button>
-      <img width="45px" src="./image/user-icon.png" alt="user icon" class="user-icon">
+      <button class="sign-in" onclick="location.href='/login.html'">Sign&nbsp;In/Register</button>
+      <img width="45px" src="./image/user-icon.png" alt="user icon" class="user-icon" onclick="location.href='/account.html'">
       <img width="60px" src="./image/menu-icon.png" alt="menu" id="menu-icon" class="element-hover" onclick="togglePanel()">
     </div>
   </nav>
@@ -33,6 +33,20 @@ if (nav) {
   <div class="nav-cover"></div>
   <div class="nav-placeholder"></div>
   `
+}
+
+const userId = sessionStorage.getItem('userId')
+if (userId && userId !== 'null') {
+  const signInButton = document.getElementsByClassName('sign-in')[0]
+  signInButton.style.display = 'none'
+
+  if (sessionStorage.getItem('userPhotoUrl') !== 'null') {
+    document.getElementsByClassName('user-icon')[0].src = sessionStorage.getItem('userPhotoUrl')
+  }  
+
+}
+else {
+  checkAuth()
 }
 
 var isBarOpen = false
