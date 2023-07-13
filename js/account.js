@@ -14,6 +14,9 @@ async function placeItem () {
   if (user.photoURL) {
     document.querySelector('.profile img').src = user.photoURL
   }
+  else {
+    document.querySelector('.profile img').src = './image/user-sign-in-icon.png'
+  }
 
   const bookingHistory = await transactionGet(user.uid)
 

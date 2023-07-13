@@ -42,7 +42,10 @@ if (userId && userId !== 'null') {
 
   if (sessionStorage.getItem('userPhotoUrl') !== 'null') {
     document.getElementsByClassName('user-icon')[0].src = sessionStorage.getItem('userPhotoUrl')
-  }  
+  }
+  else {
+    document.getElementsByClassName('user-icon')[0].src = './image/user-sign-in-icon.png'
+  }
 
 }
 else {

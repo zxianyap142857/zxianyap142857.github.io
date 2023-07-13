@@ -41,6 +41,9 @@ async function checkAuth() {
         if (user.photoURL) {
           document.getElementsByClassName('user-icon')[0].src = user.photoURL
         }
+        else {
+          document.getElementsByClassName('user-icon')[0].src = './image/user-sign-in-icon.png'
+        }
 
         resolve()
       } else {
