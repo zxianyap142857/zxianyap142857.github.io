@@ -4,7 +4,7 @@ if (nav) {
   <nav>
     <div class="nav-left">
       <a href="/index.html"><img width="50px" src="./image/logo.png"></a>
-      <div class="element-hover">NEWS</div>
+      <div class="element-hover" onclick="location.href = '/news.html'">NEWS</div>
       <div class="element-hover">PROMOTION</div>
     </div>
     <div class="nav-right">
@@ -15,7 +15,7 @@ if (nav) {
   </nav>
   <div class="sidepanel" id="sidepanel">
     <div class="panel-link">
-      <a href="#">News</a>
+      <a href="./news.html">News</a>
       <a href="./customer-services.html">Customer&nbsp;Services</a>
       <a href="./account.html">Account</a>
       <a href="./contact-us.html">Contact&nbsp;Us</a>

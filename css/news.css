@@ -1,0 +1,26 @@
+html {
+  background-image: linear-gradient(90deg, #0c3264, #040d45);
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  color: #FFD200;
+  text-align: center;
+  font-size: 50px;
+}
+
+.container {
+  display: flex;
+  width: 75%;
+  margin: 50px auto;
+}
+
+.log-image {
+  margin: auto;
+  width: 100%;
+  border: 2px solid white;
+  border-radius: 20px;
+}
