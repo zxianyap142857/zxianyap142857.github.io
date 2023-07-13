@@ -14,7 +14,7 @@
   <div id="navigation"></div> <!-- whole navigation section -->
 
   <div class="main-div"> <!-- main content -->
-    <div class="swiper mySwiper">
+    <div class="swiper banner-swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img src="./image/IT-banner.jpg" alt="IT banner">
@@ -53,39 +53,41 @@
           </div>
         </div>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next banner-swiper-next"></div>
+      <div class="swiper-button-prev banner-swiper-prev"></div>
       <div class="swiper-pagination"></div>
     </div>
 
     <!--Newly added code-->
-    <div id="movie-list">
+    <div id="movie-list" class="swiper">
+      <div class="swiper-wrapper">
+        <div class="movie-list-item swiper-slide">
+          <img src="./image/Detective_Conan_Black_Iron_Submarine-poster.jpg">
+          <a href="./movie-details.html?id=5">Movie Detail</a>
+        </div>
 
-      <div id="movie-1">
-        <img src="./image/Detective_Conan_Black_Iron_Submarine-poster.jpg">
-        <a href="./movie-details.html?id=5">Movie Detail</a>
+        <div class="movie-list-item swiper-slide">
+          <img src="./image/Transformers_Rise_of_the_Beasts-poster.jpg">
+          <a href="./movie-details.html?id=3">Movie Detail</a>
+        </div>
+
+        <div class="movie-list-item swiper-slide">
+          <img src="./image/IT-poster.jpg">
+          <a href="./movie-details.html?id=1">Movie Detail</a>
+        </div>
+
+        <div class="movie-list-item swiper-slide">
+          <img src="./image/Elemental-poster.jpg">
+          <a href="./movie-details.html?id=4">Movie Detail</a>
+        </div>
+
+        <div class="movie-list-item swiper-slide">
+          <img src="./image/insidious_the_last_key-poster.jpg">
+          <a href="./movie-details.html?id=2">Movie Detail</a>
+        </div>
       </div>
-
-      <div id="movie-2">
-        <img src="./image/Transformers_Rise_of_the_Beasts-poster.jpg">
-        <a href="./movie-details.html?id=3">Movie Detail</a>
-      </div>
-
-      <div id="movie-3">
-        <img src="./image/IT-poster.jpg">
-        <a href="./movie-details.html?id=1">Movie Detail</a>
-      </div>
-
-      <div id="movie-4">
-        <img src="./image/Elemental-poster.jpg">
-        <a href="./movie-details.html?id=4">Movie Detail</a>
-      </div>
-
-      <div id="movie-5">
-        <img src="./image/insidious_the_last_key-poster.jpg">
-        <a href="./movie-details.html?id=2">Movie Detail</a>
-      </div>
-
+      <div class="swiper-button-next movie-swiper-next"></div>
+      <div class="swiper-button-prev movie-swiper-prev"></div>
     </div>
   </div>
 

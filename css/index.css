@@ -11,12 +11,12 @@ body {
   margin-top: 20px;
 }
 
-.swiper {
+.banner-swiper {
   width: 100%;
   aspect-ratio: 10/3.5;
 }
 
-.swiper-slide {
+.banner-swiper .swiper-slide {
   border-radius: 20px;
   margin: auto;
   display: flex;
@@ -29,15 +29,15 @@ body {
   align-items: center;
 }
 
-.swiper-slide img {
+.banner-swiper img {
   border-radius: 20px;
   display: block;
   width: 100%;
   height: 100%;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.banner-swiper-next,
+.banner-swiper-prev {
   border-radius: 44px;
   background-color: #ffffff52;
   width: 60px;
@@ -76,33 +76,21 @@ h1 {
 #movie-list {
   margin-top: 20px;
   margin-bottom: 20px;
-  display: flex;
-  flex-direction: row;
 }
 
-#movie-1,
-#movie-2,
-#movie-3,
-#movie-4,
-#movie-5 {
-  flex: 1;
+.movie-list-item {
   height: 500px;
-  margin-left: 10px;
-  margin-right: 10px;
+  width: 350px;
 }
 
 /*resize image*/
-#movie-1 img,
-#movie-2 img,
-#movie-3 img,
-#movie-4 img,
-#movie-5 img {
+.movie-list-item img {
   height: 500px;
   width: 100%;
   border-radius: 10px;
 }
 
-#movie-list a {
+.movie-list-item a {
   background-color: #ffd200;
   color: black;
 
@@ -120,10 +108,14 @@ h1 {
   display: none;
 }
 
-#movie-1:hover a,
-#movie-2:hover a,
-#movie-3:hover a,
-#movie-4:hover a,
-#movie-5:hover a {
+.movie-list-item:hover a {
   display: flex;
+}
+
+.movie-swiper-next,
+.movie-swiper-prev {
+  border-radius: 44px;
+  background-color: #ffffff52;
+  width: 60px;
+  height: 60px;
 }
