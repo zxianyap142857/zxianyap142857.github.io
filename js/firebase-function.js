@@ -217,3 +217,33 @@ async function reviewGet(movieId, page) {
       })
   })
 }
+
+async function transactionGet(userId) {
+  initFirebase('database')
+
+  return new Promise((resolve, reject) => {
+
+    firebaseDatabase.ref(`/transaction/${userId}`)
+    .once('value', (snapshot) => {
+      const value = snapshot.val()
+
+      resolve(value)
+    }, (err) => {
+      console.error(err)
+      reject()
+    })
+
+  })
+}
+
+async function transactionPost(userId, time, data) {
+  initFirebase('database')
+
+    await firebaseDatabase.ref(`/transaction/${userId}/${time}`)
+      .set(data)
+      .catch((err) => {
+        console.error(err)
+      })
+
+  return
+}

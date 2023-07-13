@@ -1,12 +1,12 @@
-document.getElementById("date").innerHTML = "Transaction Date: " + getTime()
+document.getElementById("date").innerHTML = "Transaction Date: " + getTime(localStorage.getItem("transactionDate"))
 document.getElementById("amount").innerHTML = "Amount: RM " + localStorage.getItem("price")
 document.getElementById("location").innerHTML = "Cinema: " + localStorage.getItem("location")
 document.getElementById("movie").innerHTML = "Movie Name: " + localStorage.getItem("movie")
 document.getElementById("showdate").innerHTML = "Show Date: " + localStorage.getItem("showDate")
 document.getElementById("seatnumber").innerHTML = "Seat Number: " + localStorage.getItem("selectedSeat")
 
-function getTime() {
-  const date = new Date()
+function getTime(time) {
+  const date = new Date(parseInt(time))
   const year = date.getFullYear()
   const month = date.getMonth() + 1
   const day = date.getDate()

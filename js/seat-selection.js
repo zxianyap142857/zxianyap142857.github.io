@@ -59,7 +59,7 @@ function changecolorgrey(index) {
 
 function next() {
   selectedSeat.sort((a, b) => { return a - b })
-  var price = selectedSeat.length * 2;
+  var price = selectedSeat.length * 10;
   localStorage.setItem("price", price.toString())
   localStorage.setItem("selectedSeat", selectedSeat)
   location.href = '/total.html'

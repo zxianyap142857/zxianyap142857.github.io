@@ -8,7 +8,7 @@ async function next() {
   const userId = sessionStorage.getItem('userId')
   const periodId = localStorage.getItem('periodId')
   const selectedSeat = JSON.parse(`[${localStorage.getItem("selectedSeat")}]`)
-  const data = {}
+  const transactionDate = Date.now()
 
   if (!userId || userId === 'null') {
     alert('please sign in to continue pay')
@@ -16,7 +16,19 @@ async function next() {
   }
 
   if (periodId) {
+    localStorage.setItem("transactionDate", transactionDate)
+
+    const data = {
+      price: localStorage.getItem("price"),
+      location: localStorage.getItem("location"),
+      movie: localStorage.getItem("movie"),
+      showDate: localStorage.getItem("showDate"),
+      seats: selectedSeat
+    }
+
     await seatsPost(periodId, userId, selectedSeat)
+
+    await transactionPost(userId, transactionDate, data)
 
     location.href = '/transaction.html'
   }
