@@ -20,7 +20,6 @@ var bannerSwiper = new Swiper(".banner-swiper", {
 var movieListSwiper = new Swiper("#movie-list", {
   spaceBetween: 30,
   slidesPerView: 'auto',
-  centeredSlides: true,
   navigation: {
     nextEl: ".movie-swiper-next",
     prevEl: ".movie-swiper-prev"
