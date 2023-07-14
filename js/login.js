@@ -31,6 +31,12 @@ document.getElementById('sign-up-form').addEventListener('submit', (event) => {
     return false
   }
 
+  const passwordConfirmation = document.querySelector('#sign-up-form .input-password-confirmation').value
+  if (!passwordConfirmation || password !== passwordConfirmation) {
+    alert('password confirmation must same with password')
+    return false
+  }
+
   const birthDate = document.querySelector('#sign-up-form .input-birth-date').value
   if (!birthDate || !birthDate.match(/[\d]{1,2}[\D]+[\d]{1,2}[\D]+[\d]{4,4}/i)) {
     alert('birth date is not valid')

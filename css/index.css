@@ -138,7 +138,6 @@ h2 {
   }
 
   .banner-items {
-    bottom: 0%;
     flex-direction: column;
   }
   
@@ -149,5 +148,9 @@ h2 {
     margin: 5px;
     font-size: 15px;
     cursor: pointer;
+  }
+
+  .movie-list-item a {
+    display: flex;
   }
 }

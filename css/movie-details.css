@@ -177,11 +177,13 @@ h3 {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .main-div {
     flex-direction: column;
   }
+}
 
+@media screen and (max-width: 600px) {
   .details {
     font-size: 20px;
   }
