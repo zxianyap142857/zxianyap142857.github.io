@@ -58,6 +58,11 @@ function changecolorgrey(index) {
 }
 
 function next() {
+  if (!selectedSeat) {
+    alert('please at least select 1 seat')
+    return
+  }
+
   selectedSeat.sort((a, b) => { return a - b })
   var price = selectedSeat.length * 10;
   localStorage.setItem("price", price.toString())

@@ -119,3 +119,9 @@ h1 {
   width: 60px;
   height: 60px;
 }
+
+h2 {
+  font-size: 40px;
+  color: #FFD200;
+  text-align: center;
+}

@@ -1,23 +1,15 @@
 /* footer general css*/
 footer {
   background-color: #000000;
-  margin: 0px;
-  padding: 0px;
-  height: 200px;
-  position: fit-content;
   color: white;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #footer-section-1,
+#footer-section-2,
 #footer-section-3,
-#footer-section-2 {
-  padding: 0px;
-}
-
-#footer-section-1,
-#foooter-section-2,
 #footer-section-4 {
   flex: 1;
 }
@@ -33,7 +25,7 @@ h3 {
   padding: 5px 0;
 }
 
-/*foooter section-2*/
+/*footer section-2*/
 #footer-section-2 {
   display: flex;
   flex-direction: column;
@@ -46,7 +38,6 @@ h3 {
 
 /*For Footer-section 3*/
 #footer-section-3 {
-  width: 300px;
   text-align: center;
 }
 
@@ -61,8 +52,7 @@ h3 {
   height: 50px;
   flex: 1;
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 10px;
   margin: 0px;
 
 }
