@@ -125,3 +125,29 @@ h2 {
   color: #FFD200;
   text-align: center;
 }
+
+@media screen and (max-width:600px) {
+  .banner-swiper {
+    height: 300px;
+    width: 100%;
+  }
+
+  .banner-swiper img{
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .banner-items {
+    bottom: 0%;
+    flex-direction: column;
+  }
+  
+  .banner-items button {
+    margin: auto;
+    width: fit-content;
+    height: 30px;
+    margin: 5px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+}

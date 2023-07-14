@@ -125,6 +125,7 @@ h3 {
   text-align: center;
   font-size: 40px;
   font-weight: 900;
+  color: #FFD200;
 }
 
 .comment {
@@ -174,4 +175,18 @@ h3 {
 .load-more:hover {
   color: #FFD200;
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .main-div {
+    flex-direction: column;
+  }
+
+  .details {
+    font-size: 20px;
+  }
+
+  .comment {
+    font-size: 20px;
+  }
 }

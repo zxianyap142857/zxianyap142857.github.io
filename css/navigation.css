@@ -56,7 +56,7 @@ nav {
 }
 
 .sign-in:active {
-  scale: 0.9;
+  transform: scale(.9);
 }
 
 .user-icon {
@@ -139,4 +139,16 @@ nav {
 
 .nav-placeholder {
   height: 60px;
+}
+
+@media screen and (max-width:600px) {
+  .nav-left .element-hover {
+    display: none;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .sign-in {
+    font-size: 15px;
+  }
 }

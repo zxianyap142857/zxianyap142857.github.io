@@ -57,9 +57,16 @@ function togglePanel() {
   isBarOpen = !isBarOpen
   if (isBarOpen) {
     document.getElementById('menu-icon').src = "./image/close-icon.png"
-    document.getElementById("sidepanel").style.width = '400px'
     navCover.style.visibility = 'visible'
     navCover.style.opacity = 1
+
+    if (screen.width > 400) {
+      document.getElementById("sidepanel").style.width = '400px'
+    }
+    else {
+      document.getElementById("sidepanel").style.width = '100%'
+    }
+
   } else {
     document.getElementById('menu-icon').src = "./image/menu-icon.png"
     document.getElementById("sidepanel").style.width = '0px'
