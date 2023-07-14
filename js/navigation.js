@@ -5,7 +5,6 @@ if (nav) {
     <div class="nav-left">
       <a href="/index.html"><img width="50px" src="./image/logo.png"></a>
       <div class="element-hover" onclick="location.href = '/news.html'">NEWS</div>
-      <div class="element-hover">PROMOTION</div>
     </div>
     <div class="nav-right">
       <button class="sign-in" onclick="location.href='/login.html'">Sign&nbsp;In/Register</button>
