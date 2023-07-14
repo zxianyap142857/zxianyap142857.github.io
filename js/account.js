@@ -39,7 +39,7 @@ async function placeItem () {
     Seats: ${bookingHistory[key].seats}
     `
 
-    container.append(div)
+    container.prepend(div)
   }
 }
 
