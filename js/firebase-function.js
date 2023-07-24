@@ -1,11 +1,11 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyBfDfSTzGI5Zzuc9_n7w8ULqA1HNimp8as",
-  authDomain: "bit-project-3035f.firebaseapp.com",
-  databaseURL: "https://bit-project-3035f-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "bit-project-3035f",
-  storageBucket: "bit-project-3035f.appspot.com",
-  messagingSenderId: "345904641674",
-  appId: "1:345904641674:web:309139b0df7fc23fb05f73"
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: ""
 }
 
 let firebaseApp
