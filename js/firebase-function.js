@@ -1,11 +1,9 @@
 const firebaseConfig = {
-  apiKey: "",
-  authDomain: "",
-  databaseURL: "",
-  projectId: "",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: ""
+  apiKey: "AIzaSyBfDfSTzGI5Zzuc9_n7w8ULqA1HNimp8as",
+  authDomain: "bit-project-3035f.firebaseapp.com",
+  databaseURL: "https://bit-project-3035f-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "bit-project-3035f",
+  appId: "1:345904641674:web:309139b0df7fc23fb05f73"
 }
 
 let firebaseApp
@@ -42,14 +40,14 @@ async function checkAuth() {
           document.getElementsByClassName('user-icon')[0].src = user.photoURL
         }
         else {
-          document.getElementsByClassName('user-icon')[0].src = './image/user-sign-in-icon.png'
+          document.getElementsByClassName('user-icon')[0].src = '/image/user-sign-in-icon.png'
         }
 
         resolve()
       } else {
         const signInButton = document.getElementsByClassName('sign-in')[0]
         signInButton.style.display = 'block'
-        document.getElementsByClassName('user-icon')[0].src = './image/user-icon.png'
+        document.getElementsByClassName('user-icon')[0].src = '/image/user-icon.png'
 
         resolve()
       }
@@ -146,7 +144,7 @@ async function seatsGet(periodId) {
   initFirebase('database')
 
   return new Promise((resolve, reject) => {
-    firebaseDatabase.ref(`/seats/${periodId}`)
+    firebaseDatabase.ref(`/BIT102/seats/${periodId}`)
       .once('value', (snapshot) => {
         const value = snapshot.val()
 
@@ -170,7 +168,7 @@ async function seatsPost(periodId, userId, seats) {
   initFirebase('database')
 
   for (const seat of seats) {
-    await firebaseDatabase.ref(`/seats/${periodId}/${seat}`)
+    await firebaseDatabase.ref(`/BIT102/seats/${periodId}/${seat}`)
       .set(userId)
       .catch((err) => {
         console.error(err)
@@ -185,7 +183,7 @@ async function reviewGet(movieId, page) {
 
   return new Promise((resolve, reject) => {
 
-    firebaseDatabase.ref(`/reviews/${movieId}`).startAt(null, `${(page - 1) * 10}`).endBefore(null, `${page * 10}`)
+    firebaseDatabase.ref(`/BIT102/reviews/${movieId}`).startAt(null, `${(page - 1) * 10}`).endBefore(null, `${page * 10}`)
       .once('value', (snapshot) => {
         const value = snapshot.val()
 
@@ -226,7 +224,7 @@ async function transactionGet(userId) {
 
   return new Promise((resolve, reject) => {
 
-    firebaseDatabase.ref(`/transaction/${userId}`)
+    firebaseDatabase.ref(`/BIT102/transaction/${userId}`)
     .once('value', (snapshot) => {
       const value = snapshot.val()
 
@@ -242,7 +240,7 @@ async function transactionGet(userId) {
 async function transactionPost(userId, time, data) {
   initFirebase('database')
 
-    await firebaseDatabase.ref(`/transaction/${userId}/${time}`)
+    await firebaseDatabase.ref(`/BIT102/transaction/${userId}/${time}`)
       .set(data)
       .catch((err) => {
         console.error(err)
