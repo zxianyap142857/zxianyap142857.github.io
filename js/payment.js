@@ -5,6 +5,8 @@ document.getElementById("amount").innerHTML = "Amount: RM " + localStorage.getIt
 
 async function next() {
 
+  await checkAuth()
+
   const userId = sessionStorage.getItem('userId')
   const periodId = localStorage.getItem('periodId')
   const selectedSeat = JSON.parse(`[${localStorage.getItem("selectedSeat")}]`)
